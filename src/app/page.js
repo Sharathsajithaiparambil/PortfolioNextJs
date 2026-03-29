@@ -9,15 +9,17 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="relative">
+    <div className="relative flex flex-col min-h-screen">
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Services />
-      {/* <Projects /> */}
-      <Contact />
+      <main className="relative flex-1 overflow-x-hidden w-full">
+        <Hero />
+        <About />
+        <Skills />
+        <Services />
+        {/* <Projects /> */}
+        <Contact />
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 }
